@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#FFF6E5"/>
+  <rect x="60" y="60" width="1080" height="510" rx="28" fill="#1F2A8A" stroke="#1B1B2F" stroke-width="8"/>
+  <text x="110" y="300" font-family="Arial Black, sans-serif" font-size="110" fill="#FFF6E5">V3 Games</text>
+  <text x="110" y="380" font-family="Arial, sans-serif" font-size="46" fill="#FFC93C">Free browser games. No download.</text>
+  <rect x="110" y="440" width="180" height="60" rx="30" fill="#3DDC97" stroke="#1B1B2F" stroke-width="5"/>
+  <rect x="310" y="440" width="180" height="60" rx="30" fill="#FF6B5B" stroke="#1B1B2F" stroke-width="5"/>
+  <rect x="510" y="440" width="180" height="60" rx="30" fill="#FFC93C" stroke="#1B1B2F" stroke-width="5"/>
+</svg>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Snake Game Online Free | Play Snake in Your Browser | V3 Games</title>
+<meta name="description" content="Play the free Snake game online. Swipe on your phone or use arrow keys on your laptop. Eat, grow and beat your high score, no download needed.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#1F2A8A">
+<link rel="canonical" href="https://www.yourdomain.com/games/snake.html">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="V3 Games">
+<meta property="og:title" content="Snake Game Online Free | Play Snake in Your Browser | V3 Games">
+<meta property="og:description" content="Play the free Snake game online. Swipe on your phone or use arrow keys on your laptop. Eat, grow and beat your high score, no download needed.">
+<meta property="og:url" content="https://www.yourdomain.com/games/snake.html">
+<meta property="og:image" content="https://www.yourdomain.com/images/og-cover.svg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Snake Game Online Free | Play Snake in Your Browser | V3 Games">
+<meta name="twitter:description" content="Play the free Snake game online. Swipe on your phone or use arrow keys on your laptop. Eat, grow and beat your high score, no download needed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "VideoGame", "name": "Snake Game Online", "description": "Play the free Snake game online. Swipe on your phone or use arrow keys on your laptop. Eat, grow and beat your high score, no download needed.", "genre": "Arcade", "url": "https://www.yourdomain.com/games/snake.html", "gamePlatform": "Web browser", "operatingSystem": "Any", "applicationCategory": "Game", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}, "publisher": {"@type": "Organization", "name": "V3 Games"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is Snake free to play online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. You can play this Snake game online for free in your browser without downloading or signing up."}}, {"@type": "Question", "name": "How do I control the snake on my phone?", "acceptedAnswer": {"@type": "Answer", "text": "Swipe in the direction you want to go on the game board, or tap the on-screen arrow buttons below the board."}}, {"@type": "Question", "name": "Does the game save my high score?", "acceptedAnswer": {"@type": "Answer", "text": "Your best score is saved in your own browser on this device. It is not uploaded to a server."}}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.yourdomain.com/"}, {"@type": "ListItem", "position": 2, "name": "Games", "item": "https://www.yourdomain.com/games.html"}, {"@type": "ListItem", "position": 3, "name": "Snake Game Online", "item": "https://www.yourdomain.com/games/snake.html"}]}</script>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="../index.html" aria-label="V3 Games home">
+      <span class="brand-mark" aria-hidden="true">V3</span>V3 Games
+    </a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" class="nav-links" aria-label="Main">
+      <a href="../index.html">Home</a>
+      <a href="../games.html" aria-current="page">Games</a>
+      <a href="../services.html">Services</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html">Contact</a>
+      <a class="nav-cta" href="../games/snake.html">Play now</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> / <a href="../games.html">Games</a> / <span>Snake Game Online</span></nav>
+    <h1>Snake Game Online</h1>
+    <p class="lede">The classic arcade snake, free to play in your browser. Works on phones, tablets and computers.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:1rem">
+  <div class="wrap split">
+    <div class="game-stage" id="game-root">
+      <div class="game-bar"><span class="stat">Score: <span id="score">0</span></span><span class="stat">Best: <span id="best">0</span></span><button class="btn" id="start" style="padding:.4rem 1rem;box-shadow:none">Start</button></div>
+      <canvas id="board" width="400" height="400" aria-label="Snake game board. Use arrow keys or swipe to move."></canvas>
+      <div class="dpad" aria-label="On-screen controls">
+        <button class="up" aria-label="Up">▲</button><button class="left" aria-label="Left">◀</button><button class="down" aria-label="Down">▼</button><button class="right" aria-label="Right">▶</button>
+      </div>
+      <p class="notice" id="msg">Press Start to play</p>
+    </div>
+    <div class="prose">
+
+      <h2>How to play Snake</h2>
+      <ol>
+        <li>Press Start, or any arrow key or swipe to begin.</li>
+        <li>Steer the snake toward the food to grow longer and earn points.</li>
+        <li>Avoid the walls and your own tail. The game ends on contact.</li>
+      </ol>
+      <h2>Controls on every device</h2>
+      <p><strong>Phone and tablet:</strong> swipe on the board or use the on-screen arrows. <strong>Laptop and desktop:</strong> arrow keys or W, A, S, D.</p>
+      <h2>Why Snake is still fun</h2>
+      <p>The rules are simple, but the game speeds up as you grow and the space narrows. It is a perfect quick game for a short break, and your best score is saved on your device.</p>
+
+    </div>
+  </div>
+</section>
+<section class="section section--ink">
+  <div class="wrap">
+    <h2>Frequently asked questions</h2>
+    <div style="margin-top:1.5rem"><div class="faq"><details><summary>Is Snake free to play online?</summary><p>Yes. You can play this Snake game online for free in your browser without downloading or signing up.</p></details><details><summary>How do I control the snake on my phone?</summary><p>Swipe in the direction you want to go on the game board, or tap the on-screen arrow buttons below the board.</p></details><details><summary>Does the game save my high score?</summary><p>Your best score is saved in your own browser on this device. It is not uploaded to a server.</p></details></div></div>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap">
+    <h2>More free games</h2>
+    <div class="games-grid"><a class="game-card" href="memory-match.html"><div class="game-thumb" aria-hidden="true">🧠</div><div class="game-body"><h3>Memory Match Game</h3><p>Find all the matching pairs of cards.</p></div></a><a class="game-card" href="reaction-tap.html"><div class="game-thumb" aria-hidden="true">⚡</div><div class="game-body"><h3>Reaction Time Test</h3><p>Test how fast your reflexes are.</p></div></a></div>
+  </div>
+</section>
+<script>
+(function(){
+  var c=document.getElementById('board'),ctx=c.getContext('2d');
+  var N=20,S=c.width/N,snake,dir,next,food,score=0,timer=null,over=true;
+  var scoreEl=document.getElementById('score'),bestEl=document.getElementById('best'),msg=document.getElementById('msg'),startBtn=document.getElementById('start');
+  var best=0;try{best=parseInt(localStorage.getItem('v3-snake-best')||'0',10)||0;}catch(e){}
+  bestEl.textContent=best;
+  function place(){var p;do{p={x:Math.floor(Math.random()*N),y:Math.floor(Math.random()*N)};}while(snake.some(function(s){return s.x===p.x&&s.y===p.y;}));food=p;}
+  function reset(){snake=[{x:10,y:10},{x:9,y:10},{x:8,y:10}];dir={x:1,y:0};next={x:1,y:0};score=0;scoreEl.textContent=0;place();}
+  function draw(){
+    ctx.fillStyle='#0f1126';ctx.fillRect(0,0,c.width,c.height);
+    ctx.fillStyle='#FF6B5B';ctx.beginPath();ctx.arc(food.x*S+S/2,food.y*S+S/2,S*0.36,0,Math.PI*2);ctx.fill();
+    snake.forEach(function(s,i){ctx.fillStyle=i===0?'#3DDC97':'#25a86f';ctx.fillRect(s.x*S+1,s.y*S+1,S-2,S-2);});
+  }
+  function tick(){
+    dir=next;
+    var h={x:snake[0].x+dir.x,y:snake[0].y+dir.y};
+    if(h.x<0||h.y<0||h.x>=N||h.y>=N||snake.some(function(s){return s.x===h.x&&s.y===h.y;})){return end();}
+    snake.unshift(h);
+    if(h.x===food.x&&h.y===food.y){score++;scoreEl.textContent=score;place();
+      if(score>best){best=score;bestEl.textContent=best;try{localStorage.setItem('v3-snake-best',String(best));}catch(e){}}
+      if(score%5===0){clearInterval(timer);timer=setInterval(tick,Math.max(55,110-score*4));}
+    } else snake.pop();
+    draw();
+  }
+  function end(){over=true;clearInterval(timer);timer=null;msg.textContent='Game over with '+score+' points. Press Start to play again.';startBtn.textContent='Restart';}
+  function start(){reset();draw();over=false;msg.textContent='Good luck!';startBtn.textContent='Restart';clearInterval(timer);timer=setInterval(tick,110);}
+  function setDir(x,y){if(over){return;}if(x===-dir.x&&y===-dir.y)return;next={x:x,y:y};}
+  var keys={ArrowUp:[0,-1],ArrowDown:[0,1],ArrowLeft:[-1,0],ArrowRight:[1,0],w:[0,-1],s:[0,1],a:[-1,0],d:[1,0],W:[0,-1],S:[0,1],A:[-1,0],D:[1,0]};
+  document.addEventListener('keydown',function(e){if(keys[e.key]){e.preventDefault();if(over&&!timer){start();}setDir(keys[e.key][0],keys[e.key][1]);}});
+  startBtn.addEventListener('click',start);
+  document.querySelectorAll('.dpad button').forEach(function(b){b.addEventListener('click',function(){var k=b.className;
+    var v=k==='up'?[0,-1]:k==='down'?[0,1]:k==='left'?[-1,0]:[1,0];if(over&&!timer)start();setDir(v[0],v[1]);});});
+  var tx,ty;c.addEventListener('touchstart',function(e){tx=e.touches[0].clientX;ty=e.touches[0].clientY;},{passive:true});
+  c.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-tx,dy=e.changedTouches[0].clientY-ty;
+    if(Math.max(Math.abs(dx),Math.abs(dy))<20){if(over)start();return;}
+    if(Math.abs(dx)>Math.abs(dy))setDir(dx>0?1:-1,0);else setDir(0,dy>0?1:-1);if(over&&!timer)start();});
+  reset();draw();
+})();
+</script>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">V3</span>V3 Games</a>
+        <p style="margin-top:.8rem">Free, fast, browser-based games for phones, tablets and computers. No downloads, no sign-up.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul><li><a href="../index.html">Home</a></li><li><a href="../games.html">All games</a></li><li><a href="../services.html">Services</a></li><li><a href="../about.html">About us</a></li></ul>
+      </div>
+      <div>
+        <h3>Games</h3>
+        <ul><li><a href="../games/snake.html">Snake</a></li><li><a href="../games/memory-match.html">Memory Match</a></li><li><a href="../games/reaction-tap.html">Reaction Test</a></li></ul>
+      </div>
+      <div>
+        <h3>Help</h3>
+        <ul><li><a href="../contact.html">Contact</a></li><li><a href="../privacy.html">Privacy policy</a></li></ul>
+      </div>
+    </div>
+    <div class="copy">&copy; <span id="year">2026</span> V3 Games. All rights reserved.</div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+</body>
+</html>

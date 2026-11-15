@@ -24,7 +24,7 @@ v3games/
 ```
 
 ## Step 1: Change your domain (IMPORTANT)
-Search and replace `https://www.yourdomain.com` and `hello@yourdomain.com` in all files
+Search and replace `https://v3games.vercel.app` and `hello@yourdomain.com` in all files
 (VS Code: Ctrl+Shift+H / Cmd+Shift+H). Also update `sitemap.xml` and `robots.txt`.
 
 ## Step 2: Upload / host
@@ -34,7 +34,7 @@ Make sure the site is served over HTTPS.
 ## Step 3: Set up Google (for ranking)
 1. Go to https://search.google.com/search-console and add your domain.
 2. Verify ownership (DNS or HTML file method).
-3. Submit `https://yourdomain.com/sitemap.xml`.
+3. Submit `https://v3games.vercel.app/sitemap.xml`.
 4. Use "URL Inspection" to request indexing for the home page and each game page.
 5. Create a Google Business Profile too if you have a physical office.
 
